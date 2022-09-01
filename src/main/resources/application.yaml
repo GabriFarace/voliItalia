@@ -1,0 +1,18 @@
+jwt:
+  secret: 'segreto'
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/voliItalia
+    password: admin
+    username: postgres
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Europe/Rome
